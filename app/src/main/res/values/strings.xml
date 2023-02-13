@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TechnoTackle</string>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/round_net_box</item>
+    </style>
+
+</resources>

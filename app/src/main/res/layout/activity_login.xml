@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:background="@drawable/back"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#E8ECF4"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/back_arrow" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/jesta_02_2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanist_bold"
+            android:textSize="30sp"
+            android:layout_marginTop="14dp"
+            android:textColor="#1E232C"
+            android:layout_marginStart="32dp"
+            android:text="Welcome back! Glad to\n see you, Again!" />
+
+        <EditText
+            android:id="@+id/ed_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/input_back"
+            android:inputType="phone"
+            android:hint="Enter your Mobile Number" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textSize="15sp"
+                android:paddingStart="20dp"
+                android:background="@drawable/input_back"
+                android:inputType="textWebPassword"
+                android:hint="Enter your password" />
+
+            <ImageView
+                android:id="@+id/img_pass_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="17dp"
+                android:src="@drawable/fluent_eye_20_filled"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#6A707C"
+            android:fontFamily="@font/urbanist_semibold"/>
+
+        <TextView
+            android:id="@+id/tv_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Login"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/login_btn"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_semibold"/>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <View android:layout_width="84dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="12dp"
+                android:background="#CFCFCF"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6A707C"
+                android:fontFamily="@font/urbanist_semibold"
+                android:text="Or Login with" />
+
+            <View android:layout_width="84dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="12dp"
+                android:background="#CFCFCF"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="146dp"
+                android:layout_height="46dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/strock"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/facebook_ic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="146dp"
+                android:layout_height="46dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/strock"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/google_ic" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#1E232C"
+                android:fontFamily="@font/urbanist_regular"
+                android:text="Don’t have an account?" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/urbanist_bold"
+                android:textColor="#2D2E8B"
+                android:text="Register Now" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
