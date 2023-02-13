@@ -47,10 +47,8 @@ public class LoginActivity extends BaseActivity  implements LoginContractor {
             @Override
             public void onClick(View view) {
                 showLoading();
-//                mobile = ed_mobile_number.getText().toString().trim();
-//                password = ed_password .getText().toString().trim();
-                mobile = "8489276255";
-                password = "praga123";
+                mobile = ed_mobile_number.getText().toString().trim();
+                password = ed_password .getText().toString().trim();
                 ip_address = "JOIEIXONCJE";
                 unique_device_id = "EJCC87C6C";
                 auth_token = "a1106697fc62ff4ff9fa036a8d7af1ba";
